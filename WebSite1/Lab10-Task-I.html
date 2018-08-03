@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <style>
+        body {
+            background-color: black
+        }
+    </style>
+    <title></title>
+</head>
+<body>
+<Form>
+    <input type="text" id="ta1" placeholder="Number 1"/>
+    <input type="text" id="ta2" placeholder="Number 2"/>=
+    <input type="text" id="rTB" placeholder="Result" readonly="readonly"/>
+    <button type="button"  onclick="add()">Add</button>
+    <button type="button"  onclick="subtract()">Subtract</button>
+    <button type="button"  onclick="multiply()">Multiply</button>
+    <button type="button"  onclick="divide()">Divide</button>
+
+</Form>
+    <script>
+        
+        function add() {
+            
+            var n1 = document.getElementById("ta1").value;
+            var n2 = document.getElementById("ta2").value;
+            var addition = parseFloat(n1) + parseFloat(n2);
+            document.getElementById("rTB").value = addition;
+            //alert("Addition of "+n1+" and "+n2+" is "+addition);
+        }
+        function subtract() {
+            
+            var n1 = document.getElementById("ta1").value;
+            var n2 = document.getElementById("ta2").value;
+            var s = parseFloat(n1) - parseFloat(n2);
+            document.getElementById("rTB").value = s;
+            //alert("Addition of "+n1+" and "+n2+" is "+s);
+        }
+        function multiply() {
+            
+            var n1 = document.getElementById("ta1").value;
+            var n2 = document.getElementById("ta2").value;
+            var multiplication = parseFloat(n1) * parseFloat(n2);
+            document.getElementById("rTB").value = multiplication;
+            //alert("Addition of "+n1+" and "+n2+" is "+multiplication);
+        }
+        function divide() {
+            
+            var n1 = document.getElementById("ta1").value;
+            var n2 = document.getElementById("ta2").value;
+            var dividison = parseFloat(n1) / parseFloat(n2);
+            document.getElementById("rTB").value = dividison;
+            //alert("Addition of "+n1+" and "+n2+" is "+dividison);
+        }
+    </script>
+</body>
+</html>

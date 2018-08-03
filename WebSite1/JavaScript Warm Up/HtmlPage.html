@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+            <h1>Page</h1>
+<h4 id="pT">Page title: </h4>
+<h4 id="url">Page URL: </h4>
+<h4 id="lM">Page last modified: </h4>
+
+<h1>Browser Window</h1>
+<h4 id="iH">innerHeight: </h4>
+<h4 id="iW">innerWidth: </h4>
+
+<h1>Screen</h1>
+<h4 id="sH">Screen Height: </h4>
+<h4 id="sW">Screen Width: </h4>
+
+<h1>History</h1>
+<h4 id="hC">History Count: </h4>
+
+
+
+<script>
+    pT.innerText += document.title;
+    url.innerText += document.URL;
+    lM.innerText += document.lastModified;
+
+    iH.innerText += window.innerHeight;
+    iW.innerText += window.innerWidth;
+
+    sH.innerText += window.screen.height;
+    sW.innerText += window.screen.width;
+
+    hC.innerText += window.history.length;
+
+    //window.print(); for print dialog
+</script>
+</body>
+</html>

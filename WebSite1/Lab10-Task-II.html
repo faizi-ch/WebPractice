@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    <title></title>
+</head>
+<body>
+<a href onclick="doWork()">Click Me!</a>
+
+<script>
+
+    function doWork() {
+        
+        var n1 = window.prompt("Enter a number: ");
+        var m = parseFloat(n1) * 3;
+        alert(n1 + " * 3 = " + m);
+        
+        var n2 = window.prompt("Enter another number: ");
+        var a = (parseFloat(m) + parseFloat(n2));
+        alert(n1 + " * 3 + " + n2+" = "+ a);
+    }
+</script>
+</body>
+</html>

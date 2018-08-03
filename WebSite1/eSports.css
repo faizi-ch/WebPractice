@@ -1,0 +1,52 @@
+﻿body {
+    font-family: Century Gothic;
+}
+dd {
+    
+    color: aliceblue
+}
+header, footer {
+    clear: left;
+    text-align: center;
+}
+.notes {
+    width: 350px;height: 440px;
+}
+.top {
+    border: 5px solid white;
+    padding: 10px;
+    color: white;
+}
+div {
+    height: 450px;
+    word-wrap: break-word;
+    padding-bottom: 10px
+}
+.colleft{
+   position: relative;
+   width: 100%;
+   right: 50%;
+   
+}
+.col1{
+   position: relative;
+   overflow: hidden;
+   float: left;
+   width: 48%;
+   left: 101%;
+   
+}
+.col2 {
+    position: relative;
+    overflow: hidden;
+    float: left;
+    width: 48%;
+    left: 3%;
+}
+.mask{
+   position: relative;
+   overflow: hidden;
+   margin: 0px auto;
+   width: 100%;
+   
+}

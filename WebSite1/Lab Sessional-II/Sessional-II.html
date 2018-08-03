@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        .bc:focus {
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+<div id="box" style="width: 300px; height: 100px; border: 5px solid teal" onclick="clicked()">Click to enter your name</div>
+<script>
+    function clicked() {
+        var name = prompt("Enter your name:");
+        var msg = "Welcome " + name + "! to web portal";
+        alert(msg);
+        document.getElementById("box").innerText = name;
+    }
+
+    $(document).ready(function(){
+    $("#btn3").click(function(){
+        $(this).css("background-color", "yellow");
+    });
+    });
+    $(document).ready(function(){
+    $("#btn4").click(function(){
+        $(this).css("background-color", "yellow");
+    });
+});
+</script>
+
+<form>
+    <button type="button" onclick="location.href = 'button1.html'">Button - I</button>
+    <button type="button" onclick="location.href = 'button2.html'">Button - II</button>
+    <button type="button" class="bc">Button - III</button>
+    <button type="button" class="bc">Button - IV</button>
+</form>
+</body>
+</html>

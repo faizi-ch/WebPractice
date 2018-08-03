@@ -1,0 +1,10 @@
+﻿.headrow {
+            color:blue; background-color: gray;font-family: sans-serif;font-size: 36px
+        }
+ .othersrow {
+            color:black; background-color: teal;font-family: sans-serif;
+        }
+
+ ol {
+     border: 2px solid darkcyan;
+ }

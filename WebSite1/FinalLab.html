@@ -1,0 +1,72 @@
+﻿<?php
+    
+    $con=mysqli_connect("localhost","root","");
+    if (!$con)
+{
+die('Could not connect: ' . mysql_error());
+}
+else
+{
+echo "connection established and database selected<br>";
+}
+    
+    /*$data="CREATE DATABASE employee";
+$que=mysql_query($con,$data);
+
+if (!$con)
+{
+die('Could not connect: ' . mysql_error());
+}
+else
+{
+    $create_table="create table data(id INT(5) UNSIGNED AUTO_INCREMENT PRIMARY KEY,name VARCHAR(100),number VARCHAR(100) NOT NULL,designation VARCHAR(100) NOT NULL,salary DOUBLE NOT NULL)";
+if  (mysql_query($con,$create_table))
+echo "table created!!!<br>";
+}*/
+    if(isset($_REQUEST['submit']))
+    {
+    $name=mysqli_real_escape_string($con,$_POST['name']);
+    $no=mysqli_real_escape_string($con,$_POST['no']);
+    $design=mysqli_real_escape_string($con,$_POST['design']);
+    $salary=mysqli_real_escape_string($con,$_POST['salary']);
+    
+    $ins="insert into data (name, number, designation, salary)
+    values ('$name', '$no', '$design', '$salary')";
+    if  (mysqli_query($con,$ins))
+echo "values added!!!<br>";
+    }
+
+    ?>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Faizan Ishfaq (FA14-BCS_081-WAH)</title>
+</head>
+<body>
+
+<form method="post">
+    <h1>Employee Registration Form</h1>
+    <p>
+        Name:
+        <input type="text" name="name"/>
+    </p>
+    <p>
+        Number:
+        <input type="text" name="no"/>
+    </p>
+    <p>
+        Designation:
+        <input type="text" name="design"/>
+    </p>
+    <p>
+        Salary:
+        <input type="text" name="salary"/>
+    </p>
+    <input type="submit" name="submit" Value="submit"/>
+    
+    
+
+</form>
+</body>
+</html>

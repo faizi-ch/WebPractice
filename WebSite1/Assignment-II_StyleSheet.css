@@ -1,0 +1,63 @@
+﻿body {
+    background-color: black
+}
+h2.names {
+    background-color: cadetblue
+}
+header, footer {
+    clear: left;
+    text-align: center;
+}
+.top {
+    border: 5px solid white;
+    padding: 10px;
+    color: white;
+}
+div {
+    width: 100px;height: 100px;padding: 10px;
+}
+div:hover {
+    width: 350px;height: 370px;
+    transition-property: width, height;
+    transition-duration:2s, 4s;
+    transition-delay:0s, 2s;
+    transition-timing-function: ease-in;
+}
+img {
+    
+}
+a {
+    font-stretch: expanded;
+    display: inline-block;
+    max-width: 0;
+    font-size: 32px;
+    font-family: Century Gothic;
+    font-weight: bold;
+    opacity: 0
+}
+div:hover a {
+    max-width: 300px;
+    transition: max-width 4s ease-in;
+    overflow: hidden;
+    transition-delay: 0s;
+    opacity: 1
+}
+p {
+    font-family: Century Gothic;
+    color: white;
+    max-height: 0;
+    margin-top: -10px;
+    opacity: 0;
+}
+div:hover p {
+    max-height: 300px;
+    transition: max-height 4s ease-in;
+    overflow: hidden;
+    transition-delay: 3s;
+    opacity: 1
+}
+
+
+    a:link .about{
+        color:white  
+    }
